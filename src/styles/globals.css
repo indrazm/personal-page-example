@@ -635,6 +635,10 @@ h3{
   grid-column: span 2 / span 2;
 }
 
+.row-span-2{
+  grid-row: span 2 / span 2;
+}
+
 .m-auto{
   margin: auto;
 }
