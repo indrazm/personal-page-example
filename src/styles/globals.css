@@ -565,7 +565,10 @@ h3{
 }
 
 .link{
+  display: flex;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
@@ -583,7 +586,8 @@ h3{
 }
 
 .card{
-  height: 18rem;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -601,6 +605,12 @@ h3{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 1024px){
+  .card{
+    height: 18rem;
+  }
 }
 
 .absolute{
@@ -625,18 +635,6 @@ h3{
 
 .top-5{
   top: 1.25rem;
-}
-
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
-.col-span-1{
-  grid-column: span 1 / span 1;
-}
-
-.m-auto{
-  margin: auto;
 }
 
 .mx-12{
@@ -672,8 +670,12 @@ h3{
   height: 18rem;
 }
 
-.h-screen{
-  height: 100vh;
+.h-\[42px\]{
+  height: 42px;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-16{
@@ -710,10 +712,6 @@ h3{
   cursor: pointer;
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -740,6 +738,10 @@ h3{
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .gap-8{
@@ -865,14 +867,19 @@ h3{
   padding: 2rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2{
@@ -883,6 +890,10 @@ h3{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-center{
@@ -987,12 +998,6 @@ h3{
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-@media (min-width: 768px){
-  .md\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
 }
 
 @media (min-width: 1024px){

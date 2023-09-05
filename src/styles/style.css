@@ -21,10 +21,10 @@
 
 @layer components {
   .link {
-    @apply text-sm text-zinc-400 hover:text-black duration-300 transition ease-in-out cursor-pointer;
+    @apply flex justify-center items-center text-sm text-zinc-400 hover:text-black duration-300 transition ease-in-out cursor-pointer;
   }
 
   .card {
-    @apply h-72 hover:scale-105 p-12 bg-white shadow-sm shadow-zinc-200/50 rounded-3xl duration-500 ease-in-out;
+    @apply min-h-fit lg:h-72 hover:scale-105 p-12 bg-white shadow-sm shadow-zinc-200/50 rounded-3xl duration-500 ease-in-out;
   }
 }
