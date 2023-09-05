@@ -4,7 +4,7 @@ import confetti from "canvas-confetti";
 const emailForm = document.getElementById("form");
 
 new Typed("#heading", {
-  strings: ["Hey There!", "I am a Product Designer.", "Software Engineer.", "and Fullstack Indiemaker."],
+  strings: ["Hey There!", "I am a Product Designer.", "Software Engineer.", "and an Indie maker."],
   typeSpeed: 78,
   backSpeed: 50,
   loop: true,
