@@ -6,25 +6,25 @@
 
 @layer base {
   body {
-    @apply bg-slate-950 font-sans;
+    @apply font-sans;
   }
   h1 {
-    @apply font-semibold text-white text-4xl;
+    @apply font-semibold text-black text-4xl;
   }
   h2 {
-    @apply font-semibold text-white text-3xl;
+    @apply font-semibold text-black text-3xl;
   }
   h3 {
-    @apply font-semibold text-white text-2xl;
+    @apply font-semibold text-black text-2xl;
   }
 }
 
 @layer components {
   .link {
-    @apply text-slate-400 hover:text-white duration-300 transition ease-in-out cursor-pointer;
+    @apply text-sm text-zinc-400 hover:text-black duration-300 transition ease-in-out cursor-pointer;
   }
 
   .card {
-    @apply h-72 hover:scale-105 p-12 bg-slate-950/50 backdrop-blur-2xl border-2 border-slate-800 rounded-3xl duration-300 ease-in-out;
+    @apply h-72 hover:scale-105 p-12 bg-white shadow-sm shadow-zinc-200/50 rounded-3xl duration-500 ease-in-out;
   }
 }
