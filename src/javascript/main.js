@@ -24,3 +24,16 @@ emailForm.addEventListener("keydown", (e) => {
     canvas.remove();
   }
 });
+
+const card1 = document.getElementById("card1");
+card1.addEventListener("mousemove", (event) => {
+  const parentRect = card1.getBoundingClientRect();
+  parentRect.width += 200;
+  parentRect.height += 200;
+  const mouseX = event.clientX - parentRect.left - 50;
+  const mouseY = event.clientY - parentRect.top - 50;
+
+  const avatar = document.getElementById("avatar");
+  avatar.style.top = `${mouseY}px`;
+  avatar.style.left = `${mouseX}px`;
+});

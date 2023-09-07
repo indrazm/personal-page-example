@@ -637,6 +637,14 @@ h3{
   top: 1.25rem;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.-left-2{
+  left: -0.5rem;
+}
+
 .mx-12{
   margin-left: 3rem;
   margin-right: 3rem;
@@ -758,6 +766,10 @@ h3{
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-3xl{
@@ -994,14 +1006,14 @@ h3{
   text-align: center;
 }
 
-.hover\:text-yellow-400:hover{
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
 .hover\:text-rose-500:hover{
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
+}
+
+.hover\:text-yellow-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus{
